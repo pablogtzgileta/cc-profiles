@@ -67,6 +67,7 @@ When you create a profile, cc-profiles:
 1. Creates a new directory `~/.claude-{name}/`
 2. Creates symlinks to shared configuration files:
    - `settings.json` - Your Claude Code settings
+   - `stats-cache.json` - Usage statistics (unified across profiles)
    - `CLAUDE.md` - Your custom instructions
    - `agents/` - Custom agents
    - `commands/` - Custom commands
@@ -130,6 +131,7 @@ cc-list
 
 All profiles share:
 - Settings (`settings.json`)
+- Usage statistics (`stats-cache.json`) - all profiles contribute to unified stats
 - Custom instructions (`CLAUDE.md`)
 - Agents, commands, and plugins
 
