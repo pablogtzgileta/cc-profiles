@@ -9,7 +9,7 @@ export const cli = new Command();
 cli
   .name('cc-profiles')
   .description('Manage multiple Claude Code profiles with shared configuration')
-  .version('1.0.0');
+  .version('0.1.0');
 
 cli
   .command('interactive', { isDefault: true })
