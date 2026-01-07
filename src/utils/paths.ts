@@ -18,6 +18,7 @@ export const CLAUDE_PATHS = {
   /** Files and directories to symlink (shared across profiles) */
   sharedItems: [
     { name: 'settings.json', type: 'file' as const, required: true },
+    { name: 'stats-cache.json', type: 'file' as const, required: false },
     { name: 'CLAUDE.md', type: 'file' as const, required: false },
     { name: 'agents', type: 'directory' as const, required: false },
     { name: 'commands', type: 'directory' as const, required: false },
