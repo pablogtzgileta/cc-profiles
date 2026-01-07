@@ -1,0 +1,58 @@
+{
+  "name": "cc-profiles",
+  "version": "1.0.0",
+  "description": "Manage multiple Claude Code profiles with shared configuration",
+  "type": "module",
+  "license": "MIT",
+  "author": "Pablo Gutierrez",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablogtzgileta/cc-profiles.git"
+  },
+  "homepage": "https://github.com/pablogtzgileta/cc-profiles#readme",
+  "bugs": {
+    "url": "https://github.com/pablogtzgileta/cc-profiles/issues"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "cli",
+    "profiles",
+    "multi-account"
+  ],
+  "bin": {
+    "cc-profiles": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "start": "node dist/index.js",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.11.0",
+    "commander": "^14.0.2",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  }
+}
