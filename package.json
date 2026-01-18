@@ -1,6 +1,6 @@
 {
   "name": "cc-profiles",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Manage multiple Claude Code profiles with shared configuration",
   "type": "module",
   "license": "MIT",
