@@ -72,6 +72,7 @@ When you create a profile, cc-profiles:
    - `agents/` - Custom agents
    - `commands/` - Custom commands
    - `plugins/` - Installed plugins
+   - `skills/` - User skills
 3. Automatically updates the shell aliases file
 4. (First time) Offers to set up shell integration
 
@@ -133,7 +134,7 @@ All profiles share:
 - Settings (`settings.json`)
 - Usage statistics (`stats-cache.json`) - all profiles contribute to unified stats
 - Custom instructions (`CLAUDE.md`)
-- Agents, commands, and plugins
+- Agents, commands, plugins, and skills
 
 Each profile has isolated:
 - Authentication credentials (`~/.claude-{name}.json`)

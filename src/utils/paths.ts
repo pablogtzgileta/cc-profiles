@@ -23,6 +23,7 @@ export const CLAUDE_PATHS = {
     { name: 'agents', type: 'directory' as const, required: false },
     { name: 'commands', type: 'directory' as const, required: false },
     { name: 'plugins', type: 'directory' as const, required: false },
+    { name: 'skills', type: 'directory' as const, required: false },
   ] satisfies SharedItem[],
 
   /** cc-profiles configuration file */
